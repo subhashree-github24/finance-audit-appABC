@@ -1,9 +1,19 @@
-#!/bin/bash
-echo "Good Morning,subhashree"
-read day
-echo "Today is $day "
-echo "This is a beautiful place"
-echo "I'm in this folder `pwd`"
-echo "Enter your Name:\c"
-read name
-echo "my name is $name"
+pipeline{
+    agent any
+
+    stages{
+        stage('Build'){
+            steps{
+                echo "Hello I'm in build stage"
+                sh * * *
+            ./demo.sh
+              * * *  
+            }
+        }
+        stage('Deliver'){
+            steps{
+                echo "Hello I'm in Deliver stage"
+            }
+        }
+    }
+}
