@@ -1,7 +1,7 @@
 
 pipeline{
     agent {
-    lable 'java job'
+    lable 'javajob'
     }
 
     stages{
