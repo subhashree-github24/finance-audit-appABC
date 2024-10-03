@@ -1,6 +1,8 @@
 
 pipeline{
-    agent any
+    agent {
+    lable 'java job'
+    }
 
     stages{
         stage('Build'){
