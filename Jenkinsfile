@@ -5,9 +5,9 @@ pipeline{
         stage('Build'){
             steps{
                 echo "Hello I'm in build stage"
-                sh * * *
+                sh '''
             ./demo.sh
-              * * *  
+              '''  
             }
         }
         stage('Deliver'){
